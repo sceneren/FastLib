@@ -17,6 +17,7 @@ import cn.bingoogolapple.swipebacklayout.BGASwipeBackLayout;
  * 可参考{@link ActivityControlImpl#getActivityLifecycleCallbacks()}
  * @Description:
  */
+
 public class SwipeBackControlImpl implements SwipeBackControl {
 
     /**
