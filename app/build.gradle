@@ -1,4 +1,11 @@
+import java.text.SimpleDateFormat
+
 apply plugin: 'com.android.application'
+
+//获取时间的方法
+static def getNowTime() {
+    return new SimpleDateFormat("yyyy-MM-dd HH_mm", Locale.CHINA).format(new Date());
+}
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -57,7 +64,16 @@ android {
             signingConfig signingConfigs.release
         }
     }
-
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            if (variant.name != "release") {
+                return
+            }
+            outputFileName = "sample.apk"
+//            def fileName = "FastLib_v${defaultConfig.versionName}_code_${defaultConfig.versionCode}_time_${getNowTime()}.apk"
+//            outputFileName = fileName
+        }
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -78,6 +94,7 @@ android {
             force 'androidx.recyclerview:recyclerview:'.concat(supportVersion)
         }
     }
+
 }
 
 dependencies {
@@ -100,6 +117,7 @@ dependencies {
 //    implementation 'org.simple:androideventbus:1.0.5.1'
     //页面事件交互-eventbus-按需导入
 //    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'org.greenrobot:eventbus:3.2.0'
     //万能适配器--一般都需要吧
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:'.concat(BRVAHVersion)
     //webView库 继承FastWebActivity需要,不需要内置WebView可以不implementation
@@ -109,7 +127,7 @@ dependencies {
     //下拉刷新库注意刷新头SmartRefreshHeader版本最好对应尤其头版本不要低于SmartRefreshLayout版本
     implementation 'com.scwang.smart:refresh-layout-kernel:'.concat(smartRefreshLayoutVersion)
     implementation 'com.scwang.smart:refresh-header-material:'.concat(smartRefreshLayoutVersion)
-    implementation  'com.scwang.smart:refresh-header-classics:'.concat(smartRefreshLayoutVersion)
+    implementation 'com.scwang.smart:refresh-header-classics:'.concat(smartRefreshLayoutVersion)
     //Glide图片加载
     implementation 'com.github.bumptech.glide:glide:'.concat(glideVersion)
     annotationProcessor 'com.github.bumptech.glide:compiler:'.concat(glideVersion)
@@ -119,7 +137,7 @@ dependencies {
     implementation 'com.github.lygttpod:SuperTextView:2.1.8'
     implementation 'com.flyco.labelview:FlycoLabelView_Lib:1.0.2@aar'
     //文件选择器
-    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.5'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.6.1'
     //友盟统计
     implementation 'com.umeng.analytics:analytics:latest.integration'
     //Bugly
