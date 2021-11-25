@@ -2,7 +2,7 @@ package com.aries.library.fast.i;
 
 import java.util.List;
 
-import io.reactivex.annotations.NonNull;
+import io.reactivex.rxjava3.annotations.NonNull;
 
 /**
  * @Author: AriesHoo on 2018/7/16 9:16

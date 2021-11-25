@@ -18,10 +18,10 @@ import com.aries.library.fast.R;
 import com.aries.library.fast.i.ToastControl;
 import com.aries.ui.view.radius.RadiusTextView;
 
-import io.reactivex.Observable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.observers.DefaultObserver;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.observers.DefaultObserver;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 
 /**
  * @Author: AriesHoo on 2018/7/23 14:37

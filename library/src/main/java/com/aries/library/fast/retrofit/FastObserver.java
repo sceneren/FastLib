@@ -3,7 +3,7 @@ package com.aries.library.fast.retrofit;
 import com.aries.library.fast.FastManager;
 import com.aries.library.fast.i.IHttpRequestControl;
 
-import io.reactivex.observers.DefaultObserver;
+import io.reactivex.rxjava3.observers.DefaultObserver;
 
 /**
  * @Author: AriesHoo on 2018/7/23 14:21

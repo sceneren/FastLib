@@ -66,22 +66,22 @@ dependencies {
     //注解
     api 'com.jakewharton:butterknife:'.concat(butterknifeVersion)
     //retrofit+rxjava 网络请求及数据解析相关
-    api "io.reactivex.rxjava2:rxjava:2.2.20"
-    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api "io.reactivex.rxjava3:rxjava:3.1.3"
+    api 'io.reactivex.rxjava3:rxandroid:3.0.0'
     api 'com.squareup.retrofit2:retrofit:2.9.0'
     api 'com.squareup.retrofit2:converter-gson:2.9.0'
-    api 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    api 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
     //3.12.x是支持Android 4.4的
     api 'com.squareup.okhttp3:logging-interceptor:3.12.2'
-    api 'com.google.code.gson:gson:2.8.5'
+    api 'com.google.code.gson:gson:2.8.8'
     //处理rxjava内存泄漏-生命周期绑定
-    api 'com.trello.rxlifecycle3:rxlifecycle-components:3.1.0'
+    api 'com.trello.rxlifecycle4:rxlifecycle-components:4.0.2'
     //滑动返回Activity
     compileOnly 'cn.bingoogolapple:bga-swipebacklayout:2.0.1@aar'
     //页面事件交互-androideventbus-停止维护
     compileOnly 'org.simple:androideventbus:1.0.5.1'
     //页面事件交互-eventbus
-    compileOnly 'org.greenrobot:eventbus:3.1.1'
+    compileOnly 'org.greenrobot:eventbus:3.2.0'
     //多状态视图切换
     api 'com.github.Bakumon:StatusLayoutManager:1.0.4'
 }

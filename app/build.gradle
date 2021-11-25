@@ -71,7 +71,7 @@ android {
     configurations.all {
         resolutionStrategy {
             force 'com.squareup.okhttp3:logging-interceptor:3.12.2'
-            force 'io.reactivex.rxjava2:rxjava:2.2.19'
+            force 'io.reactivex.rxjava3:rxjava:3.1.3'
             force 'androidx.appcompat:appcompat:'.concat(supportVersion)
             force 'com.google.android.material:material:'.concat(supportVersion)
             force 'androidx.appcompat:appcompat:'.concat(supportVersion)

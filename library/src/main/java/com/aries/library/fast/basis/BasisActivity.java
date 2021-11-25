@@ -24,8 +24,8 @@ import com.aries.library.fast.retrofit.FastObserver;
 import com.aries.library.fast.util.FastStackUtil;
 import com.aries.library.fast.util.FastUtil;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
-import com.trello.rxlifecycle3.android.ActivityEvent;
-import com.trello.rxlifecycle3.components.support.RxAppCompatActivity;
+import com.trello.rxlifecycle4.android.ActivityEvent;
+import com.trello.rxlifecycle4.components.support.RxAppCompatActivity;
 
 import org.simple.eventbus.EventBus;
 

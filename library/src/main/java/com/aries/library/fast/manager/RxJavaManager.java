@@ -4,7 +4,7 @@ import com.aries.library.fast.retrofit.FastTransformer;
 
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 /**
  * @Author: AriesHoo on 2018/7/23 11:02

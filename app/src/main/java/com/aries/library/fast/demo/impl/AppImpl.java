@@ -46,7 +46,7 @@ import com.scwang.smart.refresh.layout.listener.DefaultRefreshHeaderCreator;
 import com.scwang.smart.refresh.layout.api.RefreshHeader;
 import com.scwang.smart.refresh.layout.api.RefreshLayout;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import me.bakumon.statuslayoutmanager.library.StatusLayoutManager;
 
 /**

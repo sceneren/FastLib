@@ -19,12 +19,13 @@ import com.aries.library.fast.retrofit.FastObserver;
 import com.aries.library.fast.util.FastStackUtil;
 import com.aries.library.fast.util.ToastUtil;
 import com.download.library.DownloadImpl;
-import com.trello.rxlifecycle3.android.ActivityEvent;
+import com.trello.rxlifecycle4.android.ActivityEvent;
 
 import java.lang.ref.SoftReference;
 import java.util.Stack;
 
-import io.reactivex.annotations.NonNull;
+import io.reactivex.rxjava3.annotations.NonNull;
+
 
 /**
  * @Author: AriesHoo on 2018/7/23 16:06
@@ -61,10 +62,6 @@ public class CheckVersionHelper extends BasisHelper {
                         new FastLoadingObserver<UpdateEntity>(R.string.checking) {
                             @Override
                             public void _onNext(@NonNull UpdateEntity entity) {
-                                if (entity == null) {
-                                    ToastUtil.show("当前已是最新版本");
-                                    return;
-                                }
                                 checkVersion(entity);
                             }
 

@@ -25,7 +25,7 @@ import com.aries.ui.helper.navigation.NavigationBarUtil;
 import com.aries.ui.util.DrawableUtil;
 import com.aries.ui.util.StatusBarUtil;
 import com.aries.ui.view.title.TitleBarView;
-import com.trello.rxlifecycle3.android.ActivityEvent;
+import com.trello.rxlifecycle4.android.ActivityEvent;
 
 import butterknife.BindView;
 

@@ -11,7 +11,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.scwang.smart.refresh.header.ClassicsHeader;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
 import com.scwang.smart.refresh.header.ClassicsHeader;
-import com.trello.rxlifecycle3.android.FragmentEvent;
+import com.trello.rxlifecycle4.android.FragmentEvent;
 
 /**
  * @Author: AriesHoo on 2018/11/19 14:20

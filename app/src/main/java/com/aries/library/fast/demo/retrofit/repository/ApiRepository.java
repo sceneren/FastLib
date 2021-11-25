@@ -13,7 +13,7 @@ import com.aries.library.fast.util.FastUtil;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 /**
  * @Author: AriesHoo on 2018/11/19 14:25
